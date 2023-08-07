@@ -1,0 +1,36 @@
+.menuNavigation{
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.links{
+  display: flex;
+  gap: 10px;
+}
+.link, .logout{
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: rgb(252, 250, 250);
+  color: gray;
+}
+.link:focus, .logout:focus{
+  color: black;
+}
+
+.link:hover, .logout:hover{
+  background-color: gray;
+  color: rgb(252, 250, 250);
+}
+.logout{
+  border: none;
+  cursor: pointer;
+  background-color: aqua;
+}
+.logo{
+  font-weight: 700;
+  font-size: 22px;
+}
+.logo:hover{
+  color: bisque;
+}

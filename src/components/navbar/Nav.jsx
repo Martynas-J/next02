@@ -1,6 +1,7 @@
 'use client'
 import Link from "next/link"
 import styles from "./navbar.module.css"
+import DarkModeToggle from "../DarkModeToggle/DarkModeToggle.js"
 
 
 const Nav = () => {
@@ -8,6 +9,7 @@ const Nav = () => {
         <nav className={styles.menuNavigation}>
             <Link className={styles.logo} href="/">Nordesas</Link>
             <div className={styles.links} >
+                <DarkModeToggle />
                 <Link className={styles.link} href="/">Home</Link>
                 <Link className={styles.link} href="/about">About</Link>
                 <Link className={styles.link} href="/blog">Blog</Link>

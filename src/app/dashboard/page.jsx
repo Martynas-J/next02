@@ -1,11 +1,11 @@
-import React from 'react'
-
-export const metadata = {
-    title: 'Dashboard',
-    description: 'Dashboard Page',
-}
+"use client"
+import useSWR from "swr"
 
 const Dashboard = () => {
+
+    const fetcher = (...args) => fetch(...args).then(res => res.json())
+
+    const { data, error, isLoading } = useSWR("https://jsonplaceholder.typicode.com/posts", fetcher)
     return (
         <div>Dashboard</div>
     )

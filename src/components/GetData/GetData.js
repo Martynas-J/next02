@@ -1,7 +1,9 @@
+import { API_URL } from "@/utils/config";
 import { notFound } from "next/navigation";
 
 export default async function getData(id) {
-    const res = await fetch(`http://localhost:3000/api/posts/${id}`, {
+    
+    const res = await fetch(`${API_URL}/posts/${id}`, {
         cache: "no-store",
     });
 

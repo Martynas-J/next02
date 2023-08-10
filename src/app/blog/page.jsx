@@ -6,7 +6,7 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 
 async function getData() {
-    const apiUrl = process.env.API_URL;
+    const apiUrl = process.env.API_URL; 
     const res = await fetch(`${apiUrl}/api/posts`);
 
     if (!res.ok) {

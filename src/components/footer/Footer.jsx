@@ -6,7 +6,7 @@ import Link from 'next/link'
 const Footer = () => {
   return (
     <div className={styles.container}>
-      <div>2023 Nordesas. All rights reserved.</div>
+      <div>2023 Nordesas. All rights reserved.</div> 
       <div className={styles.social}>
 
         <Link target='_block' href="https://www.facebook.com" ><Image className={styles.icon} src='/fb.svg' width={20} height={20} alt='Facebook' /></Link>

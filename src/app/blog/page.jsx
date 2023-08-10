@@ -7,7 +7,7 @@ import { notFound } from "next/navigation";
 
 async function getData() {
     const apiUrl = process.env.API_URL;
-    const res = await fetch(`${apiUrl}/posts`);
+    const res = await fetch(`${apiUrl}/api/posts`);
 
     if (!res.ok) {
         return notFound()

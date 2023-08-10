@@ -2,7 +2,7 @@ import { notFound } from "next/navigation";
 
 export default async function getData(id) {
     const apiUrl = process.env.API_URL;
-    const res = await fetch(`${apiUrl}/posts/${id}`);
+    const res = await fetch(`${apiUrl}/api/posts/${id}`);
 
     if (!res.ok) {
         return notFound()

@@ -6,7 +6,7 @@ dns.setDefaultResultOrder("ipv4first");
  */
 const nextConfig = {
     images: {
-        domains: ["images.pexels.com", "www.pexels.com"]
+        domains: ["images.pexels.com", "www.pexels.com", "https://placehold.co"]
     }
 };
 

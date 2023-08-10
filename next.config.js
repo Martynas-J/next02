@@ -6,8 +6,6 @@ dns.setDefaultResultOrder("ipv4first");
  */
 const nextConfig = {
     images: {
-        dangerouslyAllowSVG: true,
-        contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
         domains: ["images.pexels.com", "www.pexels.com", "placehold.co"]
     },
 };

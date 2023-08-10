@@ -2,19 +2,7 @@ import React from "react";
 import styles from "./page.module.css";
 import Link from "next/link";
 import Image from "next/image";
-
-import { notFound } from "next/navigation";
-
-async function getData() {
-    const apiUrl = process.env.API_URL; 
-    const res = await fetch(`${apiUrl}/api/posts`);
-
-    if (!res.ok) {
-        return notFound()
-    }
-
-    return res.json();
-}
+import getData from "@/components/GetData/GetData";
 
 export const metadata = {
   title: 'Blog',
@@ -22,7 +10,7 @@ export const metadata = {
 }
 
 const Blog = async () => {
-  const data = await getData();
+  const data = await getData("");
   return (
     <div className={styles.mainContainer}>
       {data.map((item) => (

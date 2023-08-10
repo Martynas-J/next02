@@ -6,7 +6,7 @@ import getData from "@/components/GetData/GetData";
 
 export async function generateMetadata({ params }) {
 
-  const post = await getData(params.id)
+  const post = await getData(params.id) 
   return {
     title: post.title,
     description: post.desc,   

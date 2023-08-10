@@ -3,6 +3,7 @@ import './globals.css'
 import { Inter } from 'next/font/google'
 import Footer from '@/components/footer/Footer'
 import { ThemeProvider } from '@/context/ThemeContext'
+import AuthProvider from '@/components/AuthProvider/AuthProvider'
 
 import dns from 'node:dns';
 dns.setDefaultResultOrder('ipv4first');
@@ -19,11 +20,13 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <ThemeProvider>
-          <div className='container'>
-            <Nav />
-            {children}
-            <Footer />
-          </div>
+          <AuthProvider>
+            <div className='container'>
+              <Nav />
+              {children}
+              <Footer />
+            </div>
+          </AuthProvider>
         </ThemeProvider>
       </body>
     </html>

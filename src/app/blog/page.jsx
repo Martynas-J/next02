@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import getData from "@/components/GetData/GetData";
 
-export const metadata = {
+export const metadata = { 
   title: 'Blog',
   description: 'Blog Page',
 } 

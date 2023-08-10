@@ -37,7 +37,7 @@ const Login = () => {
           required
           className={styles.input}
         />
-        <button className={styles.button}>Register</button>
+        <button className={styles.button}>Login</button>
       </form>
       <button onClick={() => signIn("google")}>Login whit Google</button>
 

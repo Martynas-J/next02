@@ -7,7 +7,11 @@ dns.setDefaultResultOrder("ipv4first");
 const nextConfig = {
     images: {
         domains: ["images.pexels.com", "www.pexels.com", "placehold.co"]
-    }
+    },
+    experimental: {
+        optimizeFonts: true,
+        dangerouslyAllowSVG: true, // Leidžia įkelti SVG failus
+    },
 };
 
 module.exports = nextConfig;

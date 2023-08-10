@@ -14,7 +14,7 @@ const Dashboard = () => {
     // const { data, error, isLoading } = useSWR("https://jsonplaceholder.typicode.com/posts", fetcher)
     useEffect(() => {
         if (session.status === "unauthenticated") {
-            router?.push("/dashboard/login");
+            router?.push("/dashboard/login"); 
         }
     }, [session.status, router]);
 

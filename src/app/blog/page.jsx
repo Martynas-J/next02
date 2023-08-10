@@ -7,7 +7,7 @@ import getData from "@/components/GetData/GetData";
 export const metadata = {
   title: 'Blog',
   description: 'Blog Page',
-}
+} 
 
 const Blog = async () => {
   const data = await getData("");

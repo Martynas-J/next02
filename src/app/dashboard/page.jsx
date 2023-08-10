@@ -14,7 +14,6 @@ const Dashboard = () => {
 
     const fetcher = (...args) => fetch(...args).then(res => res.json())
     const { data, mutate, error, isLoading } = useSWR(`/api/posts?username=${session?.data?.user.name}`, fetcher)
-    console.log(data)
     useEffect(() => {
         if (session.status === "unauthenticated") {
             router?.push("/dashboard/login");

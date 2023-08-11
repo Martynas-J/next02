@@ -5,7 +5,7 @@ dns.setDefaultResultOrder("ipv4first");
  * @type {import('next').NextConfig}
  */
 const nextConfig = {
-    env: {
+    env: { 
         MONGO: "mongodb+srv://Nordesasdev:Nordesasdev@cluster0.hvglvqz.mongodb.net/test?retryWrites=true&w=majority",
         API_URL: "https://next02-2hoo.vercel.app",
         GOOGLE_ID: "444899498652-lt45t8iafifcm93perrsilj1a44gin08.apps.googleusercontent.com",
